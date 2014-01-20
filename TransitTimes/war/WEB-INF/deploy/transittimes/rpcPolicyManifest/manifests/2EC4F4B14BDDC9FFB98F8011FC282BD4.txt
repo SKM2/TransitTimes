@@ -1,0 +1,2 @@
+serviceClass: sws420.TransitTimes.client.GreetingService
+path: 30362949AA320129647BE56A08F715D9.gwt.rpc
