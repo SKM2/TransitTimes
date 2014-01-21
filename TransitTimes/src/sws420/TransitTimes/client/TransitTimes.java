@@ -42,6 +42,13 @@ public class TransitTimes implements EntryPoint {
 	 */
 	public void onModuleLoad() {
 		RootPanel rootPanel = RootPanel.get("bodyContent");
+		
+		VerticalPanel verticalPanel = new VerticalPanel();
+		rootPanel.add(verticalPanel, 125, 50);
+		verticalPanel.setSize("200px", "200px");
+		
+		Label lblTransitTimes = new Label("Transit Times");
+		rootPanel.add(lblTransitTimes, 175, 0);
 		rootPanel.getElement().getStyle().setPosition(Position.RELATIVE);
 		
 	}
