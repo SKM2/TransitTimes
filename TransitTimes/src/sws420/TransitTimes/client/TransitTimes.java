@@ -1,8 +1,10 @@
 package sws420.TransitTimes.client;
 
 import sws420.TransitTimes.shared.FieldVerifier;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Style.Position;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
@@ -39,7 +41,8 @@ public class TransitTimes implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
-		RootPanel.get("bodyContent");
+		RootPanel rootPanel = RootPanel.get("bodyContent");
+		rootPanel.getElement().getStyle().setPosition(Position.RELATIVE);
 		
 	}
 }
