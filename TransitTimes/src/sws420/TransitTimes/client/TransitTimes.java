@@ -39,6 +39,7 @@ public class TransitTimes implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
+		RootPanel.get("bodyContent");
 		
 	}
 }
