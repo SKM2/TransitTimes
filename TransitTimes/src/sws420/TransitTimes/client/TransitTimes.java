@@ -20,6 +20,7 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.Image;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -106,6 +107,10 @@ public class TransitTimes implements EntryPoint {
 		
 		Label lblStop_1 = new Label("Stop: ");
 		rootPanel.add(lblStop_1, 196, 459);
+		
+		Image image = new Image("Images/pika.jpeg");
+		rootPanel.add(image, 10, 17);
+		image.setSize("100px", "100px");
 		rootPanel.getElement().getStyle().setPosition(Position.RELATIVE);
 	}
 }
