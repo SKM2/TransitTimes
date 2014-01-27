@@ -39,11 +39,18 @@ public class TransitTimes implements EntryPoint {
 	 */
 	private final GreetingServiceAsync greetingService = GWT
 			.create(GreetingService.class);
+	
 
 	/**
 	 * This is the entry point method.
 	 */
-	public void onModuleLoad() {
+	public void onModuleLoad() 
+	
+	{
+		DataPopulator data = new DataPopulator();
+		
+		data.run();
+		
 		RootPanel rootPanel = RootPanel.get("bodyContent");
 		
 		Label lblTransitTimes = new Label("Transit Times");
@@ -111,6 +118,13 @@ public class TransitTimes implements EntryPoint {
 		Image image = new Image("Images/pika.jpeg");
 		rootPanel.add(image, 10, 17);
 		image.setSize("100px", "100px");
+		
+		
+		
+		ListBox routeBox = new ListBox();
+		verticalPanel.add(routeBox);
+		
+		
 		rootPanel.getElement().getStyle().setPosition(Position.RELATIVE);
 	}
 }
