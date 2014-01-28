@@ -91,13 +91,13 @@ public class TransitTimes implements EntryPoint {
 		ListBox comboBox_6 = new ListBox();
 		verticalPanel.add(comboBox_6);
 		
-		Label lblStart = new Label("Start: ");
+		Label lblStart = new Label("Le Start: ");
 		rootPanel.add(lblStart, 190, 99);
 		
-		Label lblNewLabel = new Label("City: ");
+		Label lblNewLabel = new Label("Le City: ");
 		rootPanel.add(lblNewLabel, 200, 123);
 		
-		Label lblStation = new Label("Station: ");
+		Label lblStation = new Label("LE  Station: ");
 		rootPanel.add(lblStation, 182, 190);
 		
 		Label lblStop = new Label("Stop: ");
@@ -115,8 +115,8 @@ public class TransitTimes implements EntryPoint {
 		Label lblStop_1 = new Label("Stop: ");
 		rootPanel.add(lblStop_1, 196, 459);
 		
-		Image image = new Image("Images/pika.jpeg");
-		rootPanel.add(image, 10, 17);
+		Image image = new Image("Images/CityBus_GLPTC_logohgfhv.jpeg.png");
+		rootPanel.add(image, 22, 10);
 		image.setSize("100px", "100px");
 		
 		
