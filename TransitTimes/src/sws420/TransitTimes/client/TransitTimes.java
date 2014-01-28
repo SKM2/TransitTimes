@@ -116,7 +116,7 @@ public class TransitTimes implements EntryPoint {
 		rootPanel.add(lblStop_1, 196, 459);
 		
 		Image image = new Image("Images/CityBus_GLPTC_logohgfhv.jpeg.png");
-		rootPanel.add(image, 10, 17);
+		rootPanel.add(image, 22, 10);
 		image.setSize("100px", "100px");
 		
 		
